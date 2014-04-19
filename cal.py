@@ -3,6 +3,8 @@
 # cal.py
 # emulate the original Unix `cal` command
 
+# TBD: highlight the current day (cross-platform Linux + Windows)
+
 import sys
 
 import calendar
