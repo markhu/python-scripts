@@ -13,15 +13,15 @@ import time   # simpler than datetime
 calendar.setfirstweekday(calendar.SUNDAY)
 
 if len(sys.argv) == 2:
-  Y= sys.argv[1]
-  calendar.prcal( int(Y) )
+    Y = sys.argv[1]
+    calendar.prcal(int(Y))
 elif len(sys.argv) == 3:
-  Y= sys.argv[1]
-  m= sys.argv[2]
-  calendar.prmonth( int(Y), int(m) )
+    Y = sys.argv[1]
+    m = sys.argv[2]
+    calendar.prmonth(int(Y), int(m))
 else:
-  Y= time.strftime('%Y')
-  m= time.strftime('%m')
-  calendar.prmonth( int(Y), int(m) )
+    Y = time.strftime('%Y')
+    m = time.strftime('%m')
+    calendar.prmonth(int(Y), int(m))
 
-#EOF
+# EOF
