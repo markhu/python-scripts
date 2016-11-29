@@ -1,1 +1,2 @@
-calendar
+# pip install -r requirements.txt
+colorama>=0.3
