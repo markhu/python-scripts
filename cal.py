@@ -12,16 +12,30 @@ import time   # simpler than datetime
 
 calendar.setfirstweekday(calendar.SUNDAY)
 
-if len(sys.argv) == 2:
-    Y = sys.argv[1]
+def cal_y(Y):
     calendar.prcal(int(Y))
-elif len(sys.argv) == 3:
-    Y = sys.argv[1]
-    m = sys.argv[2]
+
+def cal(m, Y):
     calendar.prmonth(int(Y), int(m))
-else:
+
+def test_cal():
+    print ""
     Y = time.strftime('%Y')
     m = time.strftime('%m')
-    calendar.prmonth(int(Y), int(m))
+    cal(m,Y)
+    pass
+
+if __name__ == "__main__":
+    if len(sys.argv) == 2:
+        Y = sys.argv[1]
+        cal_y(Y)
+    elif len(sys.argv) == 3:
+        m = sys.argv[1]
+        Y = sys.argv[2]
+        cal(m,Y)
+    else:
+        Y = time.strftime('%Y')
+        m = time.strftime('%m')
+        cal(m,Y)
 
 # EOF
