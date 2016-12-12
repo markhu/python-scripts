@@ -52,3 +52,5 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
+# Mac OSX Finder http://www.jeffgeerling.com/blogs/jeff-geerling/stop-letting-dsstore
+echo *.DS_Store 
